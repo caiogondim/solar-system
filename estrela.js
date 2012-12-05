@@ -6,24 +6,30 @@ var Estrela = (function() {
 	var Estrela = function( radius, fillColor ) {
 
 		this.planetas = []
+		this.radius = radius
+		this.fillColor = fillColor
 
-		var canvas = document.querySelector( 'canvas' )
-		var context = canvas.getContext( '2d' )
+		this.x = document.width / 2
+		this.y = document.height / 2
 
-		// desenha a estrela
-		var centerX = document.width / 2
-		var centerY = document.height / 2
-		context.beginPath()
-		context.arc( centerX, centerY, radius, 0, Math.PI * 2, true )
-		context.closePath()
-		context.fillStyle = fillColor
-		context.fill()
+		this.desenha()
 	}
 
 	// protótipo
 	Estrela.prototype = {
 		adicionaPlaneta: function( planeta ) {
-			this.planetas.push
+			this.planetas.push( planeta )
+			planeta.estrela = this
+		},
+		desenha: function() {
+			var canvas = document.querySelector( 'canvas' )
+			var context = canvas.getContext( '2d' )
+
+			context.beginPath()
+			context.arc( this.x, this.y, this.radius, 0, Math.PI * 2, true )
+			context.closePath()
+			context.fillStyle = this.fillColor
+			context.fill()
 		}
 	}
 
