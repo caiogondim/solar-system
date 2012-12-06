@@ -10,7 +10,7 @@ var Planeta = (function() {
 		this.orbita = orbita
 		this.cor = cor
 		this.velocidade = velocidade
-		this.angulo = 0
+		this.angulo = Math.random() * 360;
 	}
 
 	// protótipo
