@@ -10,7 +10,7 @@ var Planeta = (function() {
 		this.orbita = orbita
 		this.cor = cor
 		this.velocidade = velocidade
-		this.angulo = Math.random() * 360;
+		this.angulo = Math.random() * 360
 	}
 
 	// protótipo
@@ -29,8 +29,8 @@ var Planeta = (function() {
 			context.beginPath()
 			context.arc( this.estrela.x, this.estrela.y, this.orbita, 0, Math.PI * 2, true )
 			context.closePath()
-			// context.strokeStyle = 'rgb( 71, 91, 99 )'
-			context.strokeStyle = 'rgb( 11, 40, 52 )'
+			context.strokeStyle = 'rgb( 71, 91, 99 )'
+			// context.strokeStyle = 'rgb( 11, 40, 52 )'
 			context.stroke()
 
 			// desenha planeta
