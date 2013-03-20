@@ -4,15 +4,15 @@ A solar system entirely built with &lt;canvas> and no external libs
 
 Work in progress
 
-![Solar System](https://raw.github.com/caiogondim/solar-system/master/shot.png)
+![Solar System](https://raw.github.com/caiogondim/solar-system/gh-pages/demo.gif)
 
-# Support
+## Support
 - Chrome 25+
 - Firefox 16+
 - Opera 12+
 - Safari 6+
 - Internet Explorer 9+
 
-# Credits
+## Credits
 
 The color scheme used is Solarized
