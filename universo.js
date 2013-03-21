@@ -51,9 +51,9 @@ var Universo = (function() {
 				})
 			})
 
-			setTimeout( function() {
+			requestAnimationFrame( function() {
 				that.bigBen()
-			}, 33 )
+			})
 		}
 	}
 
