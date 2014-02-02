@@ -12,8 +12,8 @@ var Universo = (function() {
 		var context = canvas.getContext( '2d' )
 
 		//
-		canvas.width = document.width
-		canvas.height = document.height
+		canvas.width = document.body.clientWidth
+		canvas.height = document.body.clientHeight
 
 		// cor de fundo do <canvas>
 		context.fillStyle = fillColor

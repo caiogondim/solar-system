@@ -9,8 +9,8 @@ var Estrela = (function() {
 		this.radius = radius
 		this.fillColor = fillColor
 
-		this.x = document.width / 2
-		this.y = document.height / 2
+		this.x = document.body.clientWidth / 2
+		this.y = document.body.clientHeight / 2
 
 		this.desenha()
 	}
